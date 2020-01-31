@@ -40,6 +40,7 @@ function capturarPulsacion(tecla){
 			if(posPlayer1>=DISTANCIA){
 				//ganador=1;
 				document.getElementById("campeon").innerHTML="El ganador es el Jugador 1 !! ";
+				//document.getElementById("ap").play();
 				jugando=false;
 			}
 		}
@@ -50,6 +51,7 @@ function capturarPulsacion(tecla){
 			if(posPlayer2>=DISTANCIA){
 				//ganador=2;
 				document.getElementById("campeon").innerHTML="El ganador es el Jugador 2 !! ";
+				//document.getElementById("ap").play();
 				jugando=false;
 			}
 		}
@@ -60,6 +62,7 @@ function capturarPulsacion(tecla){
 			if(posPlayer3>=DISTANCIA){
 				//ganador=3;
 				document.getElementById("campeon").innerHTML="El ganador es el Jugador 3 !! ";
+				//document.getElementById("ap").play();
 				jugando=false;
 			}
 		}
@@ -70,6 +73,7 @@ function capturarPulsacion(tecla){
 			if(posPlayer4>=DISTANCIA){
 				//ganador=4;
 				document.getElementById("campeon").innerHTML="El ganador es el Jugador 4 !! ";
+				//document.getElementById("ap").play();
 				jugando=false;
 			}
 		}
