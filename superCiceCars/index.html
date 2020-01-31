@@ -10,9 +10,16 @@
 	<script type="text/javascript" src="./js/juego.js"></script>
 	<title>Super Cice Cars</title>
 </head>
-<body>
+<body onload="inicializar()" onkeyup="capturarPulsacion(event)" ><!--el onkeypress se pone aquí para que funcione estando el cursor en cualquier sitio de la pág
+				El onkeyup para que al levantar el dedo de la tecla no siga moviéndose-->
 	<div>
-		<img class="player" id="player1" src="./images/mariokart0.png" alt="" onmouseenter="zoom(1)" onmouseleave="antizoom(1)">
+		<img id="logo" src="./images/logo1.png" >
+	<div>
+		<img id="meta" src="./images/meta.png">
+	</div>	
+	<div id="lineameta"></div>
+	<div>
+		<img class="player" id="player1" src="./images/mariokart0.png" alt="" onmouseenter="zoom(1)" onmouseleave="antizoom(1)"><!--el parámetro puede pasarse como this, le pasas el objeto entero-->
 	</div>
 	<div>
 		<img class="player" id="player2" src="./images/mariokart1.png" alt="" onmouseenter="zoom(2)" onmouseleave="antizoom(2)">
@@ -23,5 +30,6 @@
 	<div>
 		<img class="player" id="player4" src="./images/mariokart3.png" alt="" onmouseenter="zoom(4)" onmouseleave="antizoom(4)">
 	</div>
+		<div><h1 id="campeon"></h1>	</div>
 </body>
 </html>
